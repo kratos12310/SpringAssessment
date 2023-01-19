@@ -1,0 +1,119 @@
+Q1:
+Spring 3.0: Introduced support for Java 5 features, such as annotations and generics. Also introduced a new Spring Expression Language (SpEL) for querying and manipulating an object graph at runtime.
+Spring 3.1: Introduced support for Java 7, as well as a new caching abstraction and a new environment profile feature.
+Spring 4.0: Introduced support for Java 8, as well as a new @RestController annotation for building RESTful web services.
+Spring 4.3: Introduced a new @Test annotation for integration testing and a new @Before and @After annotations for unit testing.
+Spring 5.0: Introduced support for the Java 9, support for reactive programming with Spring WebFlux, functional web framework and functional bean definition in Spring Framework.
+Spring 5.2: Introduced support for the Java 11 and new features in JDK like HTTP client.
+Spring 6: Introduced support for Java 14, and new features like Spring Security WebFlux, Spring Data R2DBC, and more.
+
+Q2:
+The Spring Framework is an open-source application framework for the Java platform.
+It makes it easier to build enterprise-grade applications by providing a core set of features, such as dependency injection.
+It is a modular framework thus only the required features can be used by the developers.
+
+Q3: 
+Modularity: Spring is based on a modular design, which allows developers to use only the parts of the framework that they need, rather than having to use the entire framework.
+Dependency Injection: Spring's dependency injection feature allows for easier management of object dependencies, making code more readable and maintainable.
+Data Access: Spring provides a consistent data access framework that supports multiple database technologies, making it easy to switch between different databases.
+MVC Framework: Spring's MVC framework provides a clean separation of concerns between the model, view, and controller, making it easy to build web applications.
+Transaction Management: Spring's transaction management feature allows for easy management of transactions across different data access technologies.
+AOP Support: Spring's AOP support allows for the separation of cross-cutting concerns, such as logging and security, from the main application code.
+Testability: Spring's design makes it easy to write unit tests for the application code, making it easier to maintain and improve the codebase over time.
+Extensibility: Spring's extensibility allows developers to add custom functionality to the framework, making it more versatile.
+Lightweight: Spring is lightweight and doesn't require a lot of resources to run. 
+
+Q4:
+Some of the features offered by Spring Framework include:
+Inversion of Control (IoC) container
+Aspect-oriented programming (AOP)
+Data access framework
+Transaction management
+MVC web framework
+
+
+Q5:
+Main categories are:
+Core Container: This category includes the IoC container, which is the foundation of the Spring Framework. It provides the basic functionality for dependency injection, such as BeanFactory and ApplicationContext.
+Data Access/Integration: This category includes modules for data access and integration, such as JDBC, ORM, and OXM, as well as transaction management.
+Web: This category includes modules for building web applications, such as the Spring MVC web framework, web-socket, and web services (RESTful and SOAP).
+AOP and Instrumentation: This category includes modules for aspect-oriented programming and class instrumentation, such as AspectJ and instrumentation support.
+Test: This category includes modules for testing Spring-based applications, such as the Spring TestContext Framework, JUnit, and TestNG.
+Additional Modules: This category includes additional modules such as Spring Batch, Spring Integration, Spring Security, Spring Web Flow and Spring Data.
+
+Q6:
+A Spring configuration file is an XML, Java, or Groovy file used to define the beans (objects) that make up the application context in a Spring application.
+The file typically contains information such as bean class names, property values, and bean dependencies.
+This configuration file is used by the Spring Framework to create and manage the beans in the application.
+
+Q7:
+A Spring application typically has several components, including:
+Controllers: handle incoming HTTP requests and return appropriate responses.
+Services: provide business logic and interact with databases or other external resources.
+Repositories: handle data access and provide an abstraction over the underlying storage mechanism (such as a relational database).
+Models: represent domain objects and their relationships.
+Views: handle the presentation of data to the user (in web applications, this typically involves templates).
+Configurations: handle the configuration of the application, such as setting up the data source, security, and other settings.
+
+Q8:
+As a standalone framework: Spring can be used as a standalone framework for building applications by providing a wide range of functionality, including dependency injection, data access, and more.
+As a web application framework: Spring can be used to build web applications by leveraging its support for web-specific features such as controllers, views
+As a Microservices framework.
+
+Q9:
+The Spring Inversion of Control (IOC) container is a core component of the Spring Framework. 
+It is responsible for managing the instantiation, configuration, and lifecycle of objects, also known as beans.
+The IOC container uses dependency injection (DI) to manage the dependencies between beans. 
+
+Q10:
+Dependency Injection (DI) is a design pattern that allows an object to receive its dependencies from external sources rather than creating them itself. 
+This allows for a separation of concerns, where an object only needs to worry about its core functionality and not how to obtain its dependencies.
+In Spring Framework, Dependency Injection is achieved through the use of the Inversion of Control (IOC) container. 
+There are 2 types of Dependency Injection:
+Constructor-based Dependency Injection: The dependencies are supplied to the object through its constructor.
+Setter-based Dependency Injection: The dependencies are supplied to the object through setter methods.
+
+Q11:
+To Install Spring Boot in Intellij Idea
+1: We first go to Spring website to generate a project with the required build tool like Maven and then the dependencies.
+2: After this we open the folder from files section in intelij.
+3. Our Spring project is ready and new dependencies can be added in the pom.xml file.
+
+Q12:
+In the Application.Properties file we can add server.port = 9090 to change the default port.
+
+Q13:
+The whitelabel error page, which is the default error page can be configured by creating a personalised error.html page.
+
+Q15:
+If there is use of Annotations then we can very well say the project is using Application Context which is not the case in BeanFactory.
+Bean Factory implements XMLBeanFactory whereas Application Context can use ClassPath/FileSystem/WebXmlApplicationContext.
+
+Q16:
+@autowired is used for Dependency Injection while @qualifier is used along with @autowired to remove ambiguity between beans,
+On the other hand @Injection works the same as @autowired but is part of Java CDI.
+This annotation can work alongside any framework making it loosely coupled as compared to @autowired which is part of Spring. 
+
+
+Section B
+
+1 D
+2 A
+3 B
+4 A
+5 B
+6 B
+7 D
+8 A
+9 A
+10 D
+11 A
+12 A
+13 B
+14 B
+15 D
+16 D
+17 A
+18 B
+19 C
+20 D
